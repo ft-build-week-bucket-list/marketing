@@ -3,17 +3,18 @@ html{
 }
 
 #navbar{
-    // border: 2px solid green;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 1%;
     background: paleturquoise;
+    @media @tablet {
+    }
     @media @phone {
         flex-direction: column;
     }
     h1{
-        margin: 2%;
+        margin: 2% 0;
         font-family: 'Charmonman', cursive;
         font-size: 3rem;
         @media @phone {
@@ -21,28 +22,27 @@ html{
         }
     }
     .nav-tags{
+        text-align: center;
         width: 50%;
         @media @phone {
             display: flex;
             flex-direction: column;
             width:100%;
         }
-    }
+    }//closes nav tags
     a{
-        width: 100%;
         text-decoration: none;
         color: black;
         text-align: center;
         font-family: 'Bitter', serif;
         padding: 50px;
+        @media @tablet {
+            padding: 0;
+        }
         @media @phone {
             padding:1%;
         }
-    }
-    a:hover{
-        background: black;
-        color: white;
-    }
+    }//closes a tag
     .button{
         background: paleturquoise;
         border: 1px solid black;
@@ -50,12 +50,12 @@ html{
         text-align: center;
         font-size: 1rem;
         cursor: pointer;
-        margin-left: 3%;
+        margin-left: 2%;
         font-family: 'Bitter', serif;
         @media @phone {
             padding: 0;
             text-align: center;
         }
-    }
+    }//closes button
 }//closes nav
 
