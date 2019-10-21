@@ -4,23 +4,37 @@
     align-items: center;
     margin: 1%;
     background: paleturquoise;
-    overflow: hidden;
+    @media @phone {
+        flex-direction: column;
+    }
     h1{
 
         margin: 2%;
         padding-right: 2%;
         font-family: 'Charmonman', cursive;
         font-size: 30px;
+        @media @phone {
+            padding-top: 1%;
+            padding-right: 0;
+        }
     }
-    .nav-tags{
+    div{
         width: 70%;
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            width:100%;
+        }
     }
     a{
         text-decoration: none;
         color: black;
         text-align: center;
         font-family: 'Bitter', serif;
-        padding: 5%;
+        padding: 3%;
+        @media @phone {
+            padding:1%;
+        }
     }
     a:hover{
         background: black;
@@ -29,12 +43,19 @@
     .dropdown{
         display: inline-block;
         width: 50%;
+        @media @phone {
+            width: 100%;
+            text-align: center;
+        }
     }
     .dropdown-tags{
         display: none;
         position: absolute;
         background: whitesmoke;
         min-width: 150px;
+        @media @phone {
+            position: relative;
+        }
     }
     .dropdown:hover .dropdown-tags {
         display: flex;

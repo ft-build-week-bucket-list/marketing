@@ -2,13 +2,31 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    //flex-direction: column;
+    flex-direction: column;
     margin: 1%;
-    background: paleturquoise;
+    @media @phone{
+        margin-top: 3%;
+    }
+    p{
+        color: black;
+        font-family: 'Bitter', serif;
+        padding: 1%;
+    }
     div{
-        border: 2px solid green;
+        width: 100%;
+        text-align: center;
+        padding: 2%;
     }
     a{
         text-decoration: none;
+        color: black;
+        text-align: center;
+        font-family: 'Bitter', serif;
+        padding: 2%;
+        margin: 5%;
+    }
+    a:hover{
+        background: black;
+        color: white;
     }
 }

@@ -4,7 +4,11 @@
   align-items: center;
   margin: 1%;
   background: paleturquoise;
-  overflow: hidden;
+}
+@media (max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+  }
 }
 #navbar h1 {
   margin: 2%;
@@ -12,15 +16,33 @@
   font-family: 'Charmonman', cursive;
   font-size: 30px;
 }
-#navbar .nav-tags {
+@media (max-width: 500px) {
+  #navbar h1 {
+    padding-top: 1%;
+    padding-right: 0;
+  }
+}
+#navbar div {
   width: 70%;
+}
+@media (max-width: 500px) {
+  #navbar div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 #navbar a {
   text-decoration: none;
   color: black;
   text-align: center;
   font-family: 'Bitter', serif;
-  padding: 5%;
+  padding: 3%;
+}
+@media (max-width: 500px) {
+  #navbar a {
+    padding: 1%;
+  }
 }
 #navbar a:hover {
   background: black;
@@ -30,11 +52,22 @@
   display: inline-block;
   width: 50%;
 }
+@media (max-width: 500px) {
+  #navbar .dropdown {
+    width: 100%;
+    text-align: center;
+  }
+}
 #navbar .dropdown-tags {
   display: none;
   position: absolute;
   background: whitesmoke;
   min-width: 150px;
+}
+@media (max-width: 500px) {
+  #navbar .dropdown-tags {
+    position: relative;
+  }
 }
 #navbar .dropdown:hover .dropdown-tags {
   display: flex;
@@ -178,12 +211,33 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 1%;
-  background: paleturquoise;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 3%;
+  }
+}
+footer p {
+  color: black;
+  font-family: 'Bitter', serif;
+  padding: 1%;
 }
 footer div {
-  border: 2px solid green;
+  width: 100%;
+  text-align: center;
+  padding: 2%;
 }
 footer a {
   text-decoration: none;
+  color: black;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  padding: 2%;
+  margin: 5%;
+}
+footer a:hover {
+  background: black;
+  color: white;
 }
