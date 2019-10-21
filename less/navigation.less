@@ -1,0 +1,49 @@
+#navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1%;
+    background: whitesmoke;
+    overflow: hidden;
+    h1{
+
+        margin: 1% 0;
+        padding-right: 2%;
+    }
+    .nav-tags{
+        width: 70%;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+
+        padding: 5%;
+    }
+    a:hover{
+        background: black;
+        color: white;
+    }
+    .dropdown{
+        display: inline-block;
+        width: 50%;
+    }
+    .dropdown-tags{
+        display: none;
+        position: absolute;
+        background: whitesmoke;
+        min-width: 150px;
+    }
+    .dropdown:hover .dropdown-tags {
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown-tags a{
+        padding: 20px;
+    }
+
+    .dropdown-tags a:hover{
+        background: lightgray;
+    }
+}//closes nav
+
