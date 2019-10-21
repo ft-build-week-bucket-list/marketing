@@ -3,12 +3,14 @@
   justify-content: flex-start;
   align-items: center;
   margin: 1%;
-  background: whitesmoke;
+  background: paleturquoise;
   overflow: hidden;
 }
 #navbar h1 {
-  margin: 1% 0;
+  margin: 2%;
   padding-right: 2%;
+  font-family: 'Charmonman', cursive;
+  font-size: 30px;
 }
 #navbar .nav-tags {
   width: 70%;
@@ -17,6 +19,7 @@
   text-decoration: none;
   color: black;
   text-align: center;
+  font-family: 'Bitter', serif;
   padding: 5%;
 }
 #navbar a:hover {
@@ -170,4 +173,17 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  background: paleturquoise;
+}
+footer div {
+  border: 2px solid green;
+}
+footer a {
+  text-decoration: none;
 }
