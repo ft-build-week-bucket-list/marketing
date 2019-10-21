@@ -1,6 +1,9 @@
+html {
+  font-size: 62.5%;
+}
 #navbar {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   margin: 1%;
   background: paleturquoise;
@@ -12,32 +15,31 @@
 }
 #navbar h1 {
   margin: 2%;
-  padding-right: 2%;
   font-family: 'Charmonman', cursive;
-  font-size: 30px;
+  font-size: 3rem;
 }
 @media (max-width: 500px) {
   #navbar h1 {
-    padding-top: 1%;
-    padding-right: 0;
+    padding-top: 2%;
   }
 }
-#navbar div {
-  width: 70%;
+#navbar .nav-tags {
+  width: 50%;
 }
 @media (max-width: 500px) {
-  #navbar div {
+  #navbar .nav-tags {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 }
 #navbar a {
+  width: 100%;
   text-decoration: none;
   color: black;
   text-align: center;
   font-family: 'Bitter', serif;
-  padding: 3%;
+  padding: 50px;
 }
 @media (max-width: 500px) {
   #navbar a {
@@ -48,36 +50,21 @@
   background: black;
   color: white;
 }
-#navbar .dropdown {
-  display: inline-block;
-  width: 50%;
+#navbar .button {
+  background: paleturquoise;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 3%;
+  font-family: 'Bitter', serif;
 }
 @media (max-width: 500px) {
-  #navbar .dropdown {
-    width: 100%;
+  #navbar .button {
+    padding: 0;
     text-align: center;
   }
-}
-#navbar .dropdown-tags {
-  display: none;
-  position: absolute;
-  background: whitesmoke;
-  min-width: 150px;
-}
-@media (max-width: 500px) {
-  #navbar .dropdown-tags {
-    position: relative;
-  }
-}
-#navbar .dropdown:hover .dropdown-tags {
-  display: flex;
-  flex-direction: column;
-}
-#navbar .dropdown-tags a {
-  padding: 20px;
-}
-#navbar .dropdown-tags a:hover {
-  background: lightgray;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
