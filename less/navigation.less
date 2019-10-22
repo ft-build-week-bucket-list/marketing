@@ -3,27 +3,28 @@ html{
 }
 
 #navbar{
+    background: whitesmoke;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1%;
-    background: paleturquoise;
+    height: 100px;
     @media @tablet {
     }
     @media @phone {
         flex-direction: column;
     }
-    h1{
-        margin: 2% 0;
-        font-family: 'Charmonman', cursive;
-        font-size: 3rem;
+    img{
+        margin: 0 2%;
+        width:15%;
+        font-size: 10rem;
         @media @phone {
             padding-top: 2%;
         }
     }
     .nav-tags{
         text-align: center;
-        width: 50%;
+        width: 60%;
         @media @phone {
             display: flex;
             flex-direction: column;
@@ -35,7 +36,8 @@ html{
         color: black;
         text-align: center;
         font-family: 'Bitter', serif;
-        padding: 50px;
+        padding: 5%; 
+        font-size: 1.8rem;
         @media @tablet {
             padding: 0;
         }
@@ -43,19 +45,9 @@ html{
             padding:1%;
         }
     }//closes a tag
-    .button{
-        background: paleturquoise;
-        border: 1px solid black;
-        border-radius: 10px;
-        text-align: center;
-        font-size: 1rem;
-        cursor: pointer;
-        margin-left: 2%;
-        font-family: 'Bitter', serif;
-        @media @phone {
-            padding: 0;
-            text-align: center;
-        }
-    }//closes button
+    a:hover{
+        background: black;
+        color: white;
+        border-radius: 5px;
+    }
 }//closes nav
-
