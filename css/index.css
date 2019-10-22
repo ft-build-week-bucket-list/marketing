@@ -301,10 +301,10 @@ header p {
   margin: 2%;
   font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
-  padding: 1%;
+  padding: 0.5%;
   color: white;
   width: 150px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-align: center;
   cursor: pointer;
 }
@@ -313,7 +313,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #23273e;
+  background: #363b59;
 }
 @media (max-width: 568px) {
   footer {
@@ -321,7 +321,7 @@ footer {
   }
 }
 footer p {
-  color: black;
+  color: white;
   font-family: 'Bitter', serif;
   padding: 1%;
 }
