@@ -193,7 +193,6 @@ p {
   line-height: 1.4;
 }
 .container {
-  border: 1px solid yellow;
   max-width: 1680px;
   width: 100%;
   margin: 0 auto;
@@ -244,7 +243,6 @@ h1 {
 /**Major END**/
 /*Article Element Start*/
 article {
-  border: 1px solid red;
   display: flex;
   width: 100%;
 }
@@ -303,6 +301,7 @@ article {
   width: 100%;
   position: relative;
   top: -3.25em;
+  margin-top: -2.75em;
 }
 #banner h1 {
   font-size: 3.25em;
@@ -358,7 +357,8 @@ article {
   #banner {
     padding: 5em 0 1em 0 ;
     height: auto;
-    margin-bottom: -2.75em;
+    margin-top: -4.75em;
+    margin-bottom: -4.75em;
     max-height: none;
     min-height: 0;
     top: -2.75em;
@@ -367,7 +367,10 @@ article {
     font-size: 2em;
   }
   #banner > .inner .content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
   }
   #banner > .inner .content > * {
     margin-right: 0;
