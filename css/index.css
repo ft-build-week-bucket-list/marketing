@@ -130,8 +130,6 @@ html {
   font-size: 62.5%;
 }
 #navbar {
-  background: whitesmoke;
-  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -172,20 +170,14 @@ html {
   padding: 5%;
   font-size: 1.8rem;
 }
-@media (max-width: 1200px) {
-  #navbar a {
-    padding: 0;
-  }
-}
 @media (max-width: 568px) {
   #navbar a {
     padding: 1%;
   }
 }
 #navbar a:hover {
-  background: black;
+  background: #242943;
   color: white;
-  border-radius: 5px;
 }
 header {
   display: flex;
@@ -206,6 +198,7 @@ header {
 }
 header h2 {
   text-transform: uppercase;
+  text-align: center;
   font-size: 4rem;
   color: white;
   font-family: 'Nunito', sans-serif;
@@ -213,23 +206,14 @@ header h2 {
   padding-bottom: 1%;
   border-bottom: 3px solid white;
 }
-@media (max-width: 568px) {
-  header h2 {
-    font-size: 2rem;
-  }
-}
 header p {
   font-weight: bold;
+  text-align: center;
   margin: 2%;
   text-transform: uppercase;
   font-size: 2rem;
   font-family: 'Nunito', sans-serif;
   color: white;
-}
-@media (max-width: 568px) {
-  header p {
-    font-size: 1rem;
-  }
 }
 #bottom {
   display: flex;
@@ -262,8 +246,7 @@ header p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #363b59;
-  border: 2px solid red;
+  background: #2c3352;
 }
 @media (max-width: 568px) {
   #bottom-top {
@@ -351,7 +334,7 @@ footer {
 }
 @media (max-width: 568px) {
   footer {
-    margin-top: 3%;
+    padding: 2%;
   }
 }
 footer p {
@@ -363,4 +346,9 @@ footer div {
   width: 100%;
   text-align: center;
   padding: 2%;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 1%;
 }
