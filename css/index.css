@@ -163,7 +163,7 @@ body {
   background: #242943;
   color: #ffffff;
 }
-@media screen and (max-width: 1980px) {
+@media (max-width: 1980px) {
   body,
   input,
   select,
@@ -176,9 +176,6 @@ h2,
 h3,
 h4,
 h5 {
-  /* font-family: 'Russo One', sans-serif; */
-  /* color: #23293B; */
-  /* color: #ffffff; */
   color: #ffffff;
   font-weight: 600;
   line-height: 1.65;
@@ -196,7 +193,7 @@ p {
   line-height: 1.4;
 }
 .container {
-  
+  border: 1px solid yellow;
   max-width: 1680px;
   width: 100%;
   margin: 0 auto;
@@ -228,9 +225,9 @@ h1 {
   margin-bottom: 0;
   text-transform: uppercase;
 }
-@media screen and (max-width: 500px) {
-  header.major > p br {
-    display: none;
+@media (max-width: 500px) {
+  header.major > h3 {
+    display: inline;
   }
 }
 .content > .inner {
@@ -239,10 +236,16 @@ h1 {
   width: 65em;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .content > .inner {
+    display: flex;
+  }
+}
 /**Major END**/
 /*Article Element Start*/
 article {
-  display: inline-block;
+  border: 1px solid red;
+  display: flex;
   width: 100%;
 }
 .image {
@@ -253,20 +256,23 @@ article {
   height: auto;
 }
 .image img {
-  display: inline-flex;
+  display: flex;
 }
 .image.fit {
-  display: block;
+  display: flex;
   margin: 0 0 2em 0;
   width: 100%;
+  height: 100%;
 }
 .image.fit img {
   width: 100%;
+  height: 100%;
 }
 .image.main {
-  display: block;
+  display: flex;
   margin: 2.5em 0;
   width: 100%;
+  height: 100%;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -275,9 +281,9 @@ article {
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .image.main {
-    margin: 1.5em 0;
+    margin: 0 0;
   }
 }
 /*Article Element End*/
@@ -348,7 +354,7 @@ article {
     background-attachment: scroll;
   }
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   #banner {
     padding: 5em 0 1em 0 ;
     height: auto;
@@ -373,7 +379,7 @@ article {
     max-height: none;
   }
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   #banner {
     padding: 6em 0 2em 0 ;
   }
@@ -473,7 +479,7 @@ article {
 .tiles article:nth-child(6n - 5):after {
   background-image: url("https://images.unsplash.com/photo-1524850011238-e3d235c7d4c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .tiles article:nth-child(6n - 4):before {
   background-color: #3d385a;
@@ -489,7 +495,7 @@ article {
 .tiles article:nth-child(6n-3):after {
   background-image: url("https://images.unsplash.com/photo-1466584241662-8cb021032c1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .tiles article:nth-child(6n - 2):before {
   background-color: #916a44;
@@ -497,7 +503,7 @@ article {
 .tiles article:nth-child(6n-2):after {
   background-image: url("https://images.unsplash.com/photo-1446034730750-a0b64d06ad13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .tiles article:nth-child(6n - 1):before {
   background-color: #55658b;
@@ -505,31 +511,33 @@ article {
 .tiles article:nth-child(6n - 1):after {
   background-image: url("https://images.unsplash.com/photo-1519638831568-d9897f54ed69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .tiles article:nth-child(6n):before {
-  background-color: #68977e;
+  background-color: #5cad82a4;
 }
 .tiles article:nth-child(6n):after {
   background-image: url("https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
-@media screen and (max-width: 1280px) {
+@media (max-width: 500px) {
   .tiles article {
     padding: 4em 3em 2em 3em ;
-    height: 30vh;
+    height: 40vh;
     max-height: 30em;
     min-height: 20em;
   }
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .tiles {
     display: flex;
   }
   .tiles article {
-    height: 20em;
+    height: 100%;
     width: 100% !important;
   }
 }
 /*Tiles End*/
+/*Variables*/
+/*Color Variables*/
