@@ -329,26 +329,50 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background: #363b59;
 }
 @media (max-width: 568px) {
   footer {
-    padding: 2%;
+    flex-direction: column;
   }
 }
-footer p {
-  color: white;
-  font-family: 'Bitter', serif;
-  padding: 1%;
-}
-footer div {
-  width: 100%;
-  text-align: center;
+footer .copyright {
+  width: 50%;
+  background: #363b59;
   padding: 2%;
 }
-footer a {
+@media (max-width: 568px) {
+  footer .copyright {
+    padding: 2%;
+    width: 100%;
+    text-align: center;
+  }
+}
+footer .copyright p {
+  color: gray;
+  font-family: 'Bitter', serif;
+  font-size: 1.6rem;
+}
+footer .icons {
+  width: 50%;
+  color: white;
+  background: #363b59;
+  padding: 2%;
+  height: 16px;
+}
+@media (max-width: 568px) {
+  footer .icons {
+    width: 100%;
+  }
+}
+footer .icons .a-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .icons .a-tags a {
   text-decoration: none;
   color: white;
-  padding-bottom: 1%;
+  width: 20%;
+  font-size: 1.6rem;
+  text-align: center;
 }
