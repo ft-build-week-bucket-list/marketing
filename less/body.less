@@ -3,8 +3,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    // padding: 2%;
-    background: #2a2f4a;
+    background: #242943;
     color: white;
     section{
         padding: 2%;
@@ -29,11 +28,18 @@
     justify-content: center;
     align-items: center;
     background: #363b59;
-    
+    border: 2px solid red;
+    @media @phone {
+        flex-direction: column;
+        padding: 2%;
+    }
     div{
         width: 50%;
         padding: 2%;
         line-height: 1.5;
+        @media @phone {
+            width: 100%;
+        }
     }
     h3{
         font-family: 'Nunito', sans-serif;
@@ -52,6 +58,9 @@
     }
     img{
         width:50%;
+        @media @phone {
+            width: 100%;
+        }
     }
 }
 
@@ -60,8 +69,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    // padding: 2%;
-    background: #2a2f4a;
+    background: #242943;
     color: white;
     section{
         padding: 2%;
@@ -91,7 +99,7 @@
     text-transform: uppercase;
     padding: 0.5%;
     color: white;
-    width: 150px;
+    width: 200px;
     font-size: 1.5rem;
     text-align: center;
     cursor: pointer;

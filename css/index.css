@@ -135,11 +135,11 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 10rem;
 }
 @media (max-width: 568px) {
   #navbar {
-    flex-direction: column;
+    display: flex;
   }
 }
 #navbar img {
@@ -149,7 +149,8 @@ html {
 }
 @media (max-width: 568px) {
   #navbar img {
-    padding-top: 2%;
+    width: 25%;
+    margin: 2%;
   }
 }
 #navbar .nav-tags {
@@ -158,9 +159,9 @@ html {
 }
 @media (max-width: 568px) {
   #navbar .nav-tags {
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    padding: 2% 0;
+    align-items: baseline;
   }
 }
 #navbar a {
@@ -171,7 +172,7 @@ html {
   padding: 5%;
   font-size: 1.8rem;
 }
-@media (max-width: 840px) {
+@media (max-width: 1200px) {
   #navbar a {
     padding: 0;
   }
@@ -197,14 +198,25 @@ header {
   background-size: cover;
   padding: 15rem;
 }
+@media (max-width: 568px) {
+  header {
+    padding: 10rem;
+    height: 100px;
+  }
+}
 header h2 {
   text-transform: uppercase;
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: white;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   padding-bottom: 1%;
   border-bottom: 3px solid white;
+}
+@media (max-width: 568px) {
+  header h2 {
+    font-size: 2rem;
+  }
 }
 header p {
   font-weight: bold;
@@ -214,6 +226,11 @@ header p {
   font-family: 'Nunito', sans-serif;
   color: white;
 }
+@media (max-width: 568px) {
+  header p {
+    font-size: 1rem;
+  }
+}
 #bottom {
   display: flex;
 }
@@ -222,7 +239,7 @@ header p {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background: #2a2f4a;
+  background: #242943;
   color: white;
 }
 #middle section {
@@ -246,11 +263,23 @@ header p {
   justify-content: center;
   align-items: center;
   background: #363b59;
+  border: 2px solid red;
+}
+@media (max-width: 568px) {
+  #bottom-top {
+    flex-direction: column;
+    padding: 2%;
+  }
 }
 #bottom-top div {
   width: 50%;
   padding: 2%;
   line-height: 1.5;
+}
+@media (max-width: 568px) {
+  #bottom-top div {
+    width: 100%;
+  }
 }
 #bottom-top h3 {
   font-family: 'Nunito', sans-serif;
@@ -270,12 +299,17 @@ header p {
 #bottom-top img {
   width: 50%;
 }
+@media (max-width: 568px) {
+  #bottom-top img {
+    width: 100%;
+  }
+}
 #bottom {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  background: #2a2f4a;
+  background: #242943;
   color: white;
 }
 #bottom section {
@@ -303,7 +337,7 @@ header p {
   text-transform: uppercase;
   padding: 0.5%;
   color: white;
-  width: 150px;
+  width: 200px;
   font-size: 1.5rem;
   text-align: center;
   cursor: pointer;
