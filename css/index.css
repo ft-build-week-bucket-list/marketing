@@ -320,6 +320,7 @@ header p {
   align-items: center;
   width: 100%;
   margin-top: 1%;
+  margin-bottom: 2%;
 }
 #bottom .about-team .team-section1 {
   display: flex;
@@ -332,7 +333,18 @@ header p {
   padding: 1%;
   width: 30%;
 }
-#bottom .about-team .team-section1 img {
+#bottom .about-team .team-section1 .person h4 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2%;
+  font-family: 'Nunito', sans-serif;
+}
+#bottom .about-team .team-section1 .person p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+#bottom .about-team .team-section1 .person img {
+  border-radius: 5px;
   width: 10rem;
   height: 40rem;
   width: 100%;
@@ -348,10 +360,21 @@ header p {
   padding: 1%;
   width: 30%;
 }
-#bottom .about-team .team-section2 img {
+#bottom .about-team .team-section2 .person h4 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2%;
+  font-family: 'Nunito', sans-serif;
+}
+#bottom .about-team .team-section2 .person p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+#bottom .about-team .team-section2 .person img {
   width: 10rem;
   height: 40rem;
   width: 100%;
+  border-radius: 5px;
 }
 .button {
   background: #2a2f4a;
