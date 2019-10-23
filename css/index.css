@@ -135,7 +135,7 @@ html {
   align-items: center;
   height: 10rem;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #navbar {
     display: flex;
   }
@@ -145,7 +145,7 @@ html {
   width: 15%;
   font-size: 10rem;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #navbar img {
     width: 25%;
     margin: 2%;
@@ -155,7 +155,7 @@ html {
   text-align: center;
   width: 60%;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #navbar .nav-tags {
     width: 100%;
     padding: 2% 0;
@@ -170,7 +170,7 @@ html {
   padding: 5%;
   font-size: 1.8rem;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #navbar a {
     padding: 1%;
   }
@@ -190,7 +190,7 @@ header {
   background-size: cover;
   padding: 15rem;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   header {
     padding: 10rem;
     height: 100px;
@@ -248,7 +248,7 @@ header p {
   align-items: center;
   background: #2c3352;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #bottom-top {
     flex-direction: column;
     padding: 2%;
@@ -259,7 +259,7 @@ header p {
   padding: 2%;
   line-height: 1.5;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #bottom-top div {
     width: 100%;
   }
@@ -282,7 +282,7 @@ header p {
 #bottom-top img {
   width: 50%;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #bottom-top img {
     width: 100%;
   }
@@ -299,7 +299,7 @@ header p {
   padding: 2%;
   padding-bottom: 0;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #bottom section {
     padding-left: 0;
   }
@@ -311,7 +311,7 @@ header p {
   text-transform: uppercase;
   font-weight: bold;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #bottom h3 {
     padding: 2%;
   }
@@ -322,7 +322,7 @@ header p {
   line-height: 1.5;
   padding-top: 1%;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #bottom p {
     padding: 2%;
   }
@@ -336,7 +336,7 @@ header p {
   margin-top: 1%;
   margin-bottom: 2%;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #bottom .about-team {
     background: #242943;
   }
@@ -347,7 +347,7 @@ header p {
   flex-direction: row;
   margin: 1%;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #bottom .about-team .team-section1 {
     flex-direction: column;
   }
@@ -356,7 +356,7 @@ header p {
   padding: 1%;
   width: 33%;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #bottom .about-team .team-section1 .person {
     width: 100%;
   }
@@ -383,7 +383,7 @@ header p {
   flex-direction: row;
   margin: 1%;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #bottom .about-team .team-section2 {
     flex-direction: column;
   }
@@ -392,7 +392,7 @@ header p {
   padding: 1%;
   width: 33%;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   #bottom .about-team .team-section2 .person {
     width: 100%;
   }
@@ -418,7 +418,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   footer {
     flex-direction: column;
   }
@@ -428,7 +428,7 @@ footer .copyright {
   background: #363b59;
   padding: 2%;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   footer .copyright {
     padding: 2%;
     width: 100%;
@@ -447,7 +447,7 @@ footer .icons {
   padding: 2%;
   height: 16px;
 }
-@media (max-width: 568px) {
+@media (max-width: 500px) {
   footer .icons {
     width: 100%;
   }
