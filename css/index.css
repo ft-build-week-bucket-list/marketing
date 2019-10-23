@@ -312,6 +312,47 @@ header p {
   line-height: 1.5;
   padding-top: 1%;
 }
+#bottom .about-team {
+  background: #363b59;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1%;
+}
+#bottom .about-team .team-section1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 1%;
+  width: 100%;
+}
+#bottom .about-team .team-section1 .person {
+  padding: 1%;
+  width: 30%;
+}
+#bottom .about-team .team-section1 img {
+  width: 10rem;
+  height: 40rem;
+  width: 100%;
+}
+#bottom .about-team .team-section2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 1%;
+  width: 100%;
+}
+#bottom .about-team .team-section2 .person {
+  padding: 1%;
+  width: 30%;
+}
+#bottom .about-team .team-section2 img {
+  width: 10rem;
+  height: 40rem;
+  width: 100%;
+}
 .button {
   background: #2a2f4a;
   border: 2px solid white;
@@ -366,7 +407,7 @@ footer .icons {
 }
 footer .icons .a-tags {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 footer .icons .a-tags a {
