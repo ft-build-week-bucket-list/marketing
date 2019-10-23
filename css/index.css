@@ -299,6 +299,11 @@ header p {
   padding: 2%;
   padding-bottom: 0;
 }
+@media (max-width: 568px) {
+  #bottom section {
+    padding-left: 0;
+  }
+}
 #bottom h3 {
   font-family: 'Nunito', sans-serif;
   font-size: 2rem;
@@ -306,11 +311,21 @@ header p {
   text-transform: uppercase;
   font-weight: bold;
 }
+@media (max-width: 568px) {
+  #bottom h3 {
+    padding: 2%;
+  }
+}
 #bottom p {
   font-family: 'Nunito', sans-serif;
   font-size: 1.5rem;
   line-height: 1.5;
   padding-top: 1%;
+}
+@media (max-width: 568px) {
+  #bottom p {
+    padding: 2%;
+  }
 }
 #bottom .about-team {
   background: #363b59;
@@ -318,20 +333,33 @@ header p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   margin-top: 1%;
   margin-bottom: 2%;
+}
+@media (max-width: 568px) {
+  #bottom .about-team {
+    background: #242943;
+  }
 }
 #bottom .about-team .team-section1 {
   display: flex;
   justify-content: center;
   flex-direction: row;
   margin: 1%;
-  width: 100%;
+}
+@media (max-width: 568px) {
+  #bottom .about-team .team-section1 {
+    flex-direction: column;
+  }
 }
 #bottom .about-team .team-section1 .person {
   padding: 1%;
-  width: 30%;
+  width: 33%;
+}
+@media (max-width: 568px) {
+  #bottom .about-team .team-section1 .person {
+    width: 100%;
+  }
 }
 #bottom .about-team .team-section1 .person h4 {
   font-size: 2rem;
@@ -354,11 +382,20 @@ header p {
   justify-content: center;
   flex-direction: row;
   margin: 1%;
-  width: 100%;
+}
+@media (max-width: 568px) {
+  #bottom .about-team .team-section2 {
+    flex-direction: column;
+  }
 }
 #bottom .about-team .team-section2 .person {
   padding: 1%;
-  width: 30%;
+  width: 33%;
+}
+@media (max-width: 568px) {
+  #bottom .about-team .team-section2 .person {
+    width: 100%;
+  }
 }
 #bottom .about-team .team-section2 .person h4 {
   font-size: 2rem;
