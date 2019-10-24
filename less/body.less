@@ -1,0 +1,177 @@
+#middle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #242943;
+    color: white;
+    section{
+        padding: 2%;
+    }   
+        h3{
+            font-family: 'Nunito', sans-serif;
+            font-size: 2rem;
+            padding-bottom: 1%;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        p{
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            padding-top: 1%; 
+    }
+}
+
+#bottom-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  #2c3352;
+    @media @phone {
+        flex-direction: column;
+        padding: 2%;
+    }
+    div{
+        width: 50%;
+        padding: 2%;
+        line-height: 1.5;
+        @media @phone {
+            width: 100%;
+        }
+    }
+    h3{
+        font-family: 'Nunito', sans-serif;
+        font-size: 2rem;
+        padding-bottom: 1%;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 2%;
+    }
+    p{
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5rem;
+        padding-bottom: 1%; 
+        color: white;
+    }
+    img{
+        width:50%;
+        @media @phone {
+            width: 100%;
+        }
+    }
+}
+
+#bottom{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #242943;
+    color: white;
+    section{
+        padding: 2%;
+        padding-bottom: 0;
+        @media @phone {
+            padding-left: 0;
+        }
+    }   
+        h3{
+            font-family: 'Nunito', sans-serif;
+            font-size: 2rem;
+            padding-bottom: 1%;
+            text-transform: uppercase;
+            font-weight: bold;
+            @media @phone {
+                padding: 2%;
+            }
+        }
+        p{
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            padding-top: 1%; 
+            @media @phone {
+                padding: 2%;
+            }
+    }
+    .about-team{
+        background: #363b59;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        @media @phone {
+            background: #242943;
+            
+        }
+        .team-section1{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin: 1%;
+            @media @phone {
+                flex-direction: column;
+            }
+            .person{
+                padding: 1%;
+                width: 33%;
+                @media @phone {
+                    width: 100%;
+                }
+                h4{
+                    font-size: 2rem;
+                    text-align: center;
+                    margin-top: 2%;
+                    font-family: 'Nunito', sans-serif;
+                }
+                p{
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+                img{
+                    border-radius: 5px;
+                    width: 10rem;
+                    height: 40rem;
+                    width: 100%;
+                }
+            }
+        }
+        .team-section2{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin: 1%;
+            @media @phone {
+                flex-direction: column;
+            }
+            .person{
+                padding: 1%;
+                width: 33%;
+                @media @phone {
+                    width: 100%;
+                }
+                h4{
+                    font-size: 2rem;
+                    text-align: center;
+                    margin-top: 2%;
+                    font-family: 'Nunito', sans-serif;
+                }
+                p{
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+                img{
+                    width: 10rem;
+                    height: 40rem;
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}//closes #bottom
+
