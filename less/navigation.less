@@ -22,23 +22,27 @@ html{
         }
     }
     .nav-tags{
-        text-align: center;
+        text-align: right;
         width: 60%;
+        @media @tablet {
+            width: 80%;
+        }
         @media @phone {
             width: 100%;
             padding: 2% 0;
             align-items: baseline;
         }
+
     }//closes nav tags
     a{
         text-decoration: none;
         color: black;
         text-align: center;
         font-family: 'Bitter', serif;
-        padding: 5%; 
+        padding: 7% 5%; 
         font-size: 1.8rem;
         @media @phone {
-            padding:1%;
+            padding: 11% 2%;
         }
     }//closes a tag
     a:hover{

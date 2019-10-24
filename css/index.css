@@ -154,8 +154,13 @@ html {
   }
 }
 #navbar .nav-tags {
-  text-align: center;
+  text-align: right;
   width: 60%;
+}
+@media (max-width: 928px) {
+  #navbar .nav-tags {
+    width: 80%;
+  }
 }
 @media (max-width: 500px) {
   #navbar .nav-tags {
@@ -169,12 +174,12 @@ html {
   color: black;
   text-align: center;
   font-family: 'Bitter', serif;
-  padding: 5%;
+  padding: 7% 5%;
   font-size: 1.8rem;
 }
 @media (max-width: 500px) {
   #navbar a {
-    padding: 1%;
+    padding: 11% 2%;
   }
 }
 #navbar a:hover {
@@ -766,14 +771,11 @@ article {
   align-items: flex-start;
   align-content: center;
   justify-content: center;
-  padding: 6em 0 2em 0 ;
   /* border-bottom: 0 !important; */
   cursor: default;
   height: 60vh;
   width: 100%;
   position: relative;
-  top: -3.25em;
-  margin-top: -2.75em;
 }
 #banner h1 {
   font-size: 3.25em;
@@ -798,6 +800,8 @@ article {
   display: flex;
   align-items: center;
   margin: 0 0 2em 0;
+  padding: 0 10%;
+  text-align: center;
 }
 #banner > .inner .content > * {
   margin-right: 1.5em;
@@ -816,6 +820,7 @@ article {
   height: 40vh;
   min-height: 30em;
   max-height: 50em;
+  margin-top: 2em;
 }
 #banner.major.alt {
   opacity: 0.75;
