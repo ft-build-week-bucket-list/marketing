@@ -200,7 +200,6 @@ html {
 @media (max-width: 500px) {
   .aboutHeader header {
     padding: 10rem;
-    height: 100px;
   }
 }
 .aboutHeader header h2 {
