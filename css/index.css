@@ -174,22 +174,13 @@ html {
   color: black;
   text-align: center;
   font-family: 'Bitter', serif;
-  padding: 5.5% 5%;
+  padding: 5% 5%;
   font-size: 1.8rem;
-}
-@media (max-width: 928px) {
-  #navbar a {
-    padding: 6% 5%;
-  }
 }
 @media (max-width: 500px) {
   #navbar a {
-    padding: 11% 2%;
+    padding: 10.5% 2%;
   }
-}
-#navbar a:hover {
-  background: #242943;
-  color: white;
 }
 .aboutHeader header {
   display: flex;
